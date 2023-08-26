@@ -9,5 +9,10 @@
         <module name="GroupWork" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Arrays" target="1.7" />
+      <module name="Basics" target="1.7" />
+      <module name="UnitTests" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

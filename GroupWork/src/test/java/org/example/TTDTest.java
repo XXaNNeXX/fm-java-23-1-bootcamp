@@ -35,6 +35,13 @@ public class TTDTest {
         Assertions.assertEquals(expected, actual);
     }
     @Test
+    void fibonacci_returnResult_for_n4 () {
+        int n = 4;
+        int actual = TTD.fibonnaci(n);
+        int expected = 3;
+        Assertions.assertEquals(expected, actual);
+    }
+    @Test
     void fibonacci_returnResult_for_x4 () {
         int x = 7;
         int actual = TTD.fibonacci2(x);

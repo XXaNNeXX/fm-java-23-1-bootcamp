@@ -34,4 +34,23 @@ public class Codewars {
         }
         return 0;
     }
+
+    public static String wolfSheep (String[] array) {
+
+        for(int i = 0; i < array.length; i++) {
+            if(array[i].equals("wolf")) {
+                if(i == array.length-1) {
+                    return "Pls go away and stop eating my sheep";
+                } else {
+                    return "Oi! Sheep number " + (array.length-1-i) + "! You are about to be eaten by a wolf!";
+                }
+            }
+        }
+        return "";
+    }
+
+    //"Pls go away and stop eating my sheep"
+    //"Oi! Sheep number N! You are about to be eaten by a wolf!"
+    //["sheep", "sheep", "sheep", "wolf", "sheep"]
+
 }

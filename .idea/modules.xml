@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GroupWork.iml" filepath="$PROJECT_DIR$/GroupWork.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/fm-java-23-1-bootcamp.iml" filepath="$PROJECT_DIR$/.idea/fm-java-23-1-bootcamp.iml" />
     </modules>
   </component>
