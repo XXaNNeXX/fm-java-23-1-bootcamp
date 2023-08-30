@@ -1,26 +1,26 @@
 package org.example;
 
-/*import static org.example.Arrays.array;
+import static org.example.Arrays.array;
 import static org.example.Basics.basic;
 import static org.example.Codewars.*;
-import static org.example.UnitTests.*;*/
+import static org.example.UnitTests.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        /*System.out.println(euclidean(3,-5));
-        System.out.println(quarterOfTheYear(0));
+        //System.out.println(euclidean(3,-5));
+        //System.out.println(quarterOfTheYear(0));
         //array();
-        basic();
-        System.out.println(sum(3,5));
-        System.out.println(even(7));
-        System.out.println(product(2,3));
-        System.out.println(upperCase("nice"));
-        System.out.println(positive(-7));
-        System.out.println(fizzbuzz(7));
-        System.out.println(fizzbuzz2(15));
+        //basic();
+        //System.out.println(sum(3,5));
+        //System.out.println(even(7));
+        //System.out.println(product(2,3));
+        //System.out.println(upperCase("nice"));
+        //System.out.println(positive(-7));
+        //System.out.println(fizzbuzz(7));
+        //System.out.println(fizzbuzz2(15));
 
-        Auto newCar = new Auto();
+        /*Auto newCar = new Auto();
         newCar.startCar(1);
 
         Auto speed = new Auto();
@@ -46,11 +46,16 @@ public class Main {
         System.out.println(newLib[1]);
         System.out.println(newLib[2]);*/
 
+        System.out.println(pillars(10,10,5));
+
         Static obj1 = new Static();
         Static obj2 = new Static();
-        System.out.println(obj1.incrementTotalCount());
-        System.out.println(Static.incrementTotalCount());
-        System.out.println(obj2.incrementInstanceCount());
+
+        System.out.println("Static: " + Static.getTotalCount());
+        System.out.println("Static Methode: " + Static.incrementTotalCount());
+        System.out.println("Instanz: " + obj2.getInstanceCount());
+        System.out.println("Instanz Methode: " + Static.incrementTotalCount());
+
 
         System.out.println(Calculator.add(3,4));
         System.out.println(Calculator.substract(5,2));
