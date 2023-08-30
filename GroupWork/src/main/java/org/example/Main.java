@@ -18,7 +18,7 @@ public class Main {
         System.out.println(upperCase("nice"));
         System.out.println(positive(-7));
         System.out.println(fizzbuzz(7));
-        System.out.println(fizzbuzz2(15));*/
+        System.out.println(fizzbuzz2(15));
 
         Auto newCar = new Auto();
         newCar.startCar(1);
@@ -44,7 +44,16 @@ public class Main {
         newLib[2] = new Library("T.C. Boyle", "Die Terranauten", "567678-6789-7989");
         System.out.println(newLib[0]);
         System.out.println(newLib[1]);
-        System.out.println(newLib[2]);
+        System.out.println(newLib[2]);*/
+
+        Static obj1 = new Static();
+        Static obj2 = new Static();
+        System.out.println(obj1.incrementTotalCount());
+        System.out.println(Static.incrementTotalCount());
+        System.out.println(obj2.incrementInstanceCount());
+
+        System.out.println(Calculator.add(3,4));
+        System.out.println(Calculator.substract(5,2));
     }
 
 }
