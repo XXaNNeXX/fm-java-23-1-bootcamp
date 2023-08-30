@@ -30,14 +30,14 @@ public class Arrays {
         }
         System.out.println("Die größte Zahl ist " + max);
 
-        int[] newArray = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+        /*int[] newArray = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
         for (int i = 0; i < myArray.length; i++) {
             for (int j = 0; j < newArray.length; i++) {
                 int sum2 = myArray[i] + newArray[i];
                 System.out.println("Summe beider Array-Werte: " + sum2);
             }
-        }
+        }*/
     }
 
 }

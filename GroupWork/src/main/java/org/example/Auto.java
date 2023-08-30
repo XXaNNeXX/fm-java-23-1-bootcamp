@@ -20,7 +20,7 @@ public class Auto {
     public void startCar(int velocity) {
 
         if(velocity > 0) {
-            System.out.println("Das Auto ist gestartet");
+            System.out.println("Der " + brand + " ist gestartet");
         } else {
             System.out.println("Bitte starte das Auto");
         }
