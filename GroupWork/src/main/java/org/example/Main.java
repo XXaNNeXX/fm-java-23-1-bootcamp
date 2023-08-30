@@ -1,9 +1,9 @@
 package org.example;
 
-import static org.example.Arrays.array;
+/*import static org.example.Arrays.array;
 import static org.example.Basics.basic;
 import static org.example.Codewars.*;
-import static org.example.UnitTests.*;
+import static org.example.UnitTests.*;*/
 
 public class Main {
     public static void main(String[] args) {
@@ -34,6 +34,17 @@ public class Main {
 
         Person person2 = new Person("Maria", 58, "weiblich");
         person2.intro();
+
+        Book newBook = new Book("Juli Zeh", "Unter Leuten", "345456-36545767-453456");
+        System.out.println(newBook);
+
+        Library[] newLib = new Library[3];
+        newLib[0] = new Library("Neal Stephenson", "Amalthea", "3456-356-34546");
+        newLib[1] = new Library("Rob Hart", "Der Store", "345435-5678-686989");
+        newLib[2] = new Library("T.C. Boyle", "Die Terranauten", "567678-6789-7989");
+        System.out.println(newLib[0]);
+        System.out.println(newLib[1]);
+        System.out.println(newLib[2]);
     }
 
 }
