@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Codewars {
 
-    public static int euclidean(int x, int y) {
+    /*public static int euclidean(int x, int y) {
 
         if(x > 0 && y > 0) {
             return 1;
@@ -37,7 +37,7 @@ public class Codewars {
         return 0;
     }
 
-    /*public static String wolfSheep (String[] array) {
+    public static String wolfSheep (String[] array) {
 
         //"Pls go away and stop eating my sheep"
         //"Oi! Sheep number N! You are about to be eaten by a wolf!"
@@ -53,7 +53,7 @@ public class Codewars {
             }
         }
         return "";
-    }*/
+    }
 
     static int fizzbuzz(int number) {
         if(number % 3 != 0 && number % 5 != 0) {
@@ -82,14 +82,14 @@ public class Codewars {
             }
         }
         return score;
-    }
-
-    /*public static int pillars(int numPill, int dist, int width){
-
-        if(numPill > 1) {
-            int sum =
-        }
-        (numPill*width) + ((numPill*dist)-dist) - 2*width
-        return -1;
     }*/
+
+    public static int pillars(int numPill, int dist, int width){
+
+        dist *= 100;
+        if(numPill > 1) {
+            return (numPill*width) + ((numPill*dist)-dist) - 2*width;
+        }
+        return 0;
+    }
 }
