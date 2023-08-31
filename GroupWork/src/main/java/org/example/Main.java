@@ -33,20 +33,43 @@ public class Main {
         person1.intro();
 
         Person person2 = new Person("Maria", 58, "weiblich");
-        person2.intro();
+        person2.intro();*/
 
-        Book newBook = new Book("Juli Zeh", "Unter Leuten", "345456-36545767-453456");
+        //------------------------------------------------------------------------------
+
+        //Book newBook = new Book("Juli Zeh", "Unter Leuten", "345456-36545767-453456");
+        //System.out.println(newBook);
+
+        Book newBook = new Book();
+        newBook.setAuthor("Juli Zeh");
+        newBook.setTitle("Unter Leuten");
+        newBook.setIsbn("345456-36545767-453456");
+
         System.out.println(newBook);
 
-        Library[] newLib = new Library[3];
+        //--------------------------------------------------------------------------------
+
+        Library newLib = new Library();
+
+        Book[] books = new Book[3];
+        books[0] = new Book("A", "A", "123");
+        books[1] = new Book("B", "B", "456");
+        books[2] = new Book("C", "C", "789");
+
+        newLib.setBooks(books);
+        System.out.println(newLib);
+
+        /*Library[] newLib = new Library[3];
         newLib[0] = new Library("Neal Stephenson", "Amalthea", "3456-356-34546");
         newLib[1] = new Library("Rob Hart", "Der Store", "345435-5678-686989");
         newLib[2] = new Library("T.C. Boyle", "Die Terranauten", "567678-6789-7989");
         System.out.println(newLib[0]);
         System.out.println(newLib[1]);
-        System.out.println(newLib[2]);*/
+        System.out.println(newLib[2]);
 
         System.out.println(pillars(10,10,5));
+        System.out.println(TwiceAsOld(40, 15));
+        System.out.println(sumOfDifferences(new int[]{2, 1, 10}));
 
         Static obj1 = new Static();
         Static obj2 = new Static();
@@ -58,7 +81,7 @@ public class Main {
 
 
         System.out.println(Calculator.add(3,4));
-        System.out.println(Calculator.substract(5,2));
+        System.out.println(Calculator.substract(5,2));*/
     }
 
 }

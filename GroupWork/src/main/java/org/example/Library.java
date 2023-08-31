@@ -1,47 +1,31 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class Library {
 
-    private String author;
-    private String title;
-    private String isbn;
+    private Book[] books;
 
-    public Library(String author, String title, String isbn) {
-        this.author = author;
-        this.title = title;
-        this.isbn = isbn;
+    public Library() {
+
     }
 
-    public String getAuthor() {
-        return author;
+    public Library(Book[] books) {
+        this.books = books;
     }
 
-    public String getTitle() {
-        return title;
+    public Book[] getBooks() {
+        return books;
     }
 
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setAuthor(String newAuthor) {
-        author = newAuthor;
-    }
-
-    public void setTitle(String newTitle) {
-        title = newTitle;
-    }
-
-    public void setIsbn(String newIsbn) {
-        isbn = newIsbn;
+    public void setBooks(Book[] books) {
+        this.books = books;
     }
 
     @Override
     public String toString() {
         return "Library{" +
-                "author='" + author + '\'' +
-                ", title='" + title + '\'' +
-                ", isbn='" + isbn + '\'' +
+                "books=" + Arrays.toString(books) +
                 '}';
     }
 }
